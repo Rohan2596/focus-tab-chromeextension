@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Focus Tab",
+  "description": "Hides all tabs except the current one, restores them with one click.",
+  "version": "1.0",
+
+  "permissions": [
+    "tabs",
+    "storage",
+    "windows",
+    "activeTab"
+  ],
+
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "icon/icon48.png",
+      "100": "icon/icon100.png",
+      "128": "icon/icon128.png"
+    }
+  },
+
+  "icons": {
+    "48": "icon/icon48.png",
+    "100": "icon/icon100.png",
+    "128": "icon/icon128.png"
+  }
+}

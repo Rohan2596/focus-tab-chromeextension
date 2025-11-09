@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Focus Tab</title>
+  <style>
+    body {
+      font-family: 'Google Sans', Arial, sans-serif;
+      width: 240px;
+      padding: 16px;
+      margin: 0;
+      background: #ffffff;
+      color: #202124;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      font-size: 14px;
+      font-weight: 500;
+      border: none;
+      border-radius: 8px;
+      background: #e01a1a;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.2s, box-shadow 0.2s;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    button:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+
+    button:hover:not(:disabled) {
+      background: #b81616;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      margin-top: 14px;
+      font-size: 13px;
+      color: #5f6368;
+      cursor: pointer;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 8px;
+      width: 16px;
+      height: 16px;
+      accent-color: #e01a1a;
+      cursor: pointer;
+    }
+
+    .info {
+      margin-top: 12px;
+      font-size: 12px;
+      color: #5f6368;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    .footer {
+      margin-top: 16px;
+      font-size: 11px;
+      color: #9aa0a6;
+      text-align: center;
+      line-height: 1.4;
+    }
+
+    .footer strong {
+      color: #202124;
+    }
+  </style>
+</head>
+
+<body>
+  <button id="toggle" aria-label="Toggle focus mode">Loading…</button>
+
+  <label>
+    <input type="checkbox" id="minimizeOption" />
+    Minimize instead of hide
+  </label>
+
+  <div class="info">
+    Focus hides or minimizes other tabs into a new window and restores them instantly.
+  </div>
+
+  <div class="footer">
+    Built with 💖, Made in India<br>
+    Powered by <strong>Rohan Ravindra Kadam</strong>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
