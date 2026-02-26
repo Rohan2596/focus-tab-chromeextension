@@ -2,15 +2,11 @@
   "manifest_version": 3,
   "name": "Focus Tab",
   "description": "Hides all tabs except the current one, restores them with one click.",
-  "version": "1.0",
-
+  "version": "1.1",
   "permissions": [
-    "tabs",
     "storage",
-    "windows",
-    "activeTab"
-  ],
-
+    "windows"
+    ],
   "background": {
     "service_worker": "service_worker.js"
   },

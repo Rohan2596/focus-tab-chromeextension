@@ -5,64 +5,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy - Focus Tab</title>
   <style>
+    :root {
+      --primary-color: #2c3e50;
+      --accent-color: #3498db;
+      --text-color: #333;
+    }
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       margin: 40px auto;
-      max-width: 700px;
-      line-height: 1.6;
-      color: #333;
+      max-width: 750px;
+      line-height: 1.7;
+      color: var(--text-color);
+      padding: 0 20px;
+      background-color: #fcfcfc;
+    }
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
     }
     h1, h2 {
-      color: #2c3e50;
+      color: var(--primary-color);
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
     }
+    h1 { font-size: 2.2rem; text-align: center; margin-bottom: 30px; }
+    h2 { font-size: 1.4rem; margin-top: 30px; }
+    .last-updated {
+      text-align: center;
+      color: #7f8c8d;
+      font-style: italic;
+      margin-bottom: 30px;
+    }
+    ul { padding-left: 20px; }
+    li { margin-bottom: 10px; }
+    .highlight {
+      background: #eef7fd;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 600;
+      color: var(--accent-color);
+    }
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #95a5a6;
+    }
+    a { color: var(--accent-color); text-decoration: none; }
+    a:hover { text-decoration: underline; }
   </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p><strong>Last Updated:</strong> November 9, 2025</p>
+  <div class="container">
+    <h1>Privacy Policy</h1>
+    <p class="last-updated">Last Updated: February 26, 2026</p>
 
-  <p>
-    Thank you for using <strong>Focus Tab</strong> — a Chrome extension that helps you focus by hiding all tabs except the one you are currently viewing, and easily restoring them later.
-  </p>
+    <p>
+      Thank you for choosing <strong>Focus Tab</strong>. We are committed to a <span class="highlight">Privacy-First</span> approach. This extension is designed to help you reclaim your focus by temporarily hiding background tabs, creating a distraction-free workspace.
+    </p>
 
-  <h2>Data Collection</h2>
-  <p>
-    <strong>Focus Tab</strong> does <em>not</em> collect, store, or transmit any personally identifiable information (PII).  
-    The extension operates entirely within your local browser environment.
-  </p>
+    <h2>Data Collection & Processing</h2>
+    <p>
+      <strong>Focus Tab does NOT collect, store, or transmit any personally identifiable information (PII).</strong> 
+      All operations, including tab management and window organization, occur entirely within your local browser environment. We do not have access to your browsing history, URLs, or tab content.
+    </p>
 
-  <h2>Permissions</h2>
-  <p>
-    The extension requests certain Chrome permissions only for functionality:
-  </p>
-  <ul>
-    <li><strong>tabs</strong>: To hide, restore, and manage your open tabs.</li>
-    <li><strong>windows</strong>: To focus on a single window and restore others.</li>
-    <li><strong>storage</strong>: To locally store which tabs were hidden, if needed.</li>
-    <li><strong>activeTab</strong>: To identify the tab currently in focus.</li>
-  </ul>
+    <h2>Permissions & Usage</h2>
+    <p>
+      Following the principle of <span class="highlight">Least Privilege</span>, Focus Tab only requests the minimum permissions necessary for its core functionality:
+    </p>
+    <ul>
+      <li><strong>windows</strong>: Used to organize your active workspace and manage the secondary container for hidden tabs.</li>
+      <li><strong>storage</strong>: Used locally on your device to remember the <strong>IDs</strong> of hidden tabs so they can be restored accurately. No data is synced to external servers.</li>
+    </ul>
+    <p><em>Note: This extension does NOT require or use the "tabs" permission, ensuring your browsing data remains private.</em></p>
 
-  <p>
-    These permissions are used strictly for providing the intended functionality — no data is shared externally.
-  </p>
+    <h2>Zero Third-Party Integration</h2>
+    <p>
+      Focus Tab is a standalone utility. We do not use analytics, tracking scripts, or advertising modules. The extension does not connect to any external APIs or servers.
+    </p>
 
-  <h2>Third-Party Services</h2>
-  <p>
-    Focus Tab does not use analytics, tracking scripts, or connect to any external servers or APIs.
-  </p>
+    <h2>User Control</h2>
+    <p>
+      You have full control over your data. All stored preferences and tab IDs are cleared automatically when you "Restore Tabs" or can be manually removed by clearing your browser's extension data.
+    </p>
 
-  <h2>Contact</h2>
-  <p>
-    If you have any questions or concerns regarding privacy, please contact:
-  </p>
-  <p>
-    <strong>Developer:</strong> Rohan Ravindra Kadam<br />
-    <strong>Email:</strong> <a href="mailto:rohankadam2596@gmail.com">rohankadam2596@gmail.com</a>
-  </p>
+    <h2>Contact</h2>
+    <p>
+      For privacy concerns or technical support:
+    </p>
+    <p>
+      <strong>Developer:</strong> Rohan Ravindra Kadam<br />
+      <strong>Email:</strong> <a href="mailto:rohankadam2596@gmail.com">rohankadam2596@gmail.com</a>
+    </p>
 
-  <h2>Changes to This Policy</h2>
-  <p>
-    Any future updates to this privacy policy will be reflected on this page with a revised date.
-  </p>
+    <footer>
+      Built with ❤️ for a focused web | Made in India 🇮🇳
+    </footer>
+  </div>
 </body>
 </html>

@@ -27,10 +27,8 @@ Focus Tab is a simple Chrome extension that helps you stay focused by hiding all
 
 | Permission | Purpose |
 |-------------|----------|
-| `tabs` | Manage and restore open tabs. |
 | `windows` | Control the browser window to show only the focused tab. |
 | `storage` | Save hidden tab information locally (if required). |
-| `activeTab` | Detect which tab is currently active. |
 
 These permissions are used **only** for tab management — your data never leaves your device.
 
